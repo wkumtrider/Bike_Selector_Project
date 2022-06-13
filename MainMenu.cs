@@ -34,5 +34,28 @@ namespace Bike_Selector_Project
                 Console.WriteLine($"{menuOptionCount++}.{option.ItemText}");
             }
         }
+
+        public int GetMenuSelection(List<MenuOption> options)
+        {
+            do
+            {
+                string userChoice = Console.ReadLine();
+                userChoice = userChoice.ToLower();
+                if (userChoice == "exit")
+                {
+                    Console.Clear ();
+                    Console.WriteLine("Until Next Time");
+                    return -1;
+                }
+                else
+                {
+                    if (int.TryParse(userChoice, out int selection) && selection > 0 && selection <= options.Count)
+                    {
+                        return selection;
+                    }
+                }
+
+            } while (true);
+        }
     }
 }
