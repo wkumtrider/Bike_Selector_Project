@@ -10,7 +10,7 @@ namespace Bike_Selector_Project
     {
         public MenuOption(string itemText)
         {
-            itemText = itemText.Trim();
+            ItemText = itemText.Trim();
         }
         public string ItemText { get; set; }
     }
