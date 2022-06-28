@@ -25,14 +25,21 @@ namespace Bike_Selector_Project
         public void DisplayMainMenu(List<MenuOption> options)
         {
             Console.Clear();
-            Console.WriteLine("Please choose a bike brand from the menu below to see availabe models for sale");
-            Console.WriteLine("To exit the database please type 'Exit' and press enter");
+            Console.WriteLine("Please choose a bike brand from the menu below.");
 
             int menuOptionCount = 1;
             foreach(var option in options)
             {
                 Console.WriteLine($"{menuOptionCount++}.{option.ItemText}");
             }
+
+           // Console.WriteLine("Please choose a bike type from the list");
+            
+            //string typeOfBike = Console.ReadLine();  
+            
+
+            
+            Console.WriteLine("To exit the database please type 'Exit' and press enter");
         }
 
         public int GetMenuSelection(List<MenuOption> options)
@@ -45,7 +52,7 @@ namespace Bike_Selector_Project
                 {
                     Console.Clear ();
                     Console.WriteLine("Until Next Time");
-                    return -1;
+                    Environment.Exit(0);
                 }
                 else
                 {
@@ -53,6 +60,7 @@ namespace Bike_Selector_Project
                     {
                         return selection;
                     }
+                    Console.WriteLine("Invalid Option");
                 }
 
             } while (true);
