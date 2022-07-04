@@ -22,7 +22,14 @@ namespace Bike_Selector_Project
             var options = menu.BuildMainMenu();
             menu.DisplayMainMenu(options);
             var bikeSelected = menu.GetMenuSelection(options);
+
+            var bikeType = from type in bikes where type.BikeType == "XC" select type;
             
+            foreach (var i in bikeType)
+            {
+                Console.WriteLine(i);
+            }
+
             foreach (var bike in bikes)
             {
                 Console.WriteLine(bike.BikeBrand);
@@ -33,7 +40,7 @@ namespace Bike_Selector_Project
             Console.WriteLine($"You selected menu option {bikeSelected}");
             return bikeSelected;
 
-
+            
 
         }
     }
