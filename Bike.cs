@@ -10,5 +10,7 @@ namespace Bike_Selector_Project
     {
         public string BikeType { get; set; }
         public string BikeBrand { get; set; }
+        public string BikeModel { get; set; }
+
     }
 }

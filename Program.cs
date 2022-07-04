@@ -8,30 +8,31 @@ namespace Bike_Selector_Project
     { 
         public static void Main(string[] args)
         {
-            // create a json file with a list of bikes
             InitInventory();            
             
-            // read the list of bikes from the file (in the bin folder
-            string jsonString = File.ReadAllText("Bikes.json");
-            var bikes = JsonSerializer.Deserialize<List<BikeBrand>>(jsonString);
-            
-            foreach (var bike in bikes) bike.Display();
         }
         
-        static void InitInventory()
+        public static int InitInventory()
         {
-            var bikes = new List<BikeBrand>(); bikes.Add(new BikeBrand() { Trek = "Trek", Giant = "Giant", Pivot = "Pivot", Ibis = "Ibis"});
-            bikes.Add(new BikeBrand() { Transition = "Transition", Specialized = "Specialized", Kona = "Kona"});
 
-            string jsonString = JsonSerializer.Serialize(bikes);
-            File.WriteAllText("Bikes.json", jsonString); // the file will be created in the bin folder
+            string jsonString = File.ReadAllText("Bikes.json");
+            var bikes = JsonSerializer.Deserialize<List<Bike>>(jsonString);            
 
             MainMenu menu = new MainMenu();
             var options = menu.BuildMainMenu();
             menu.DisplayMainMenu(options);
-
             var bikeSelected = menu.GetMenuSelection(options);
             
+            foreach (var bike in bikes)
+            {
+                Console.WriteLine(bike.BikeBrand);
+                Console.WriteLine(bike.BikeType);
+                Console.WriteLine(bike.BikeModel);
+                Console.WriteLine("===========================");
+            }
+            Console.WriteLine($"You selected menu option {bikeSelected}");
+            return bikeSelected;
+
 
 
         }

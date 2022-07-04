@@ -14,8 +14,8 @@ namespace Bike_Selector_Project
            {
                new MenuOption ("Trek"),
                new MenuOption ("Giant"),
-               new MenuOption ("Pivot"),
                new MenuOption ("Ibis"),
+               new MenuOption ("Pivot"),
                new MenuOption ("Transition"),
                new MenuOption ("Specialized"),
                new MenuOption ("Kona"),
@@ -33,12 +33,7 @@ namespace Bike_Selector_Project
                 Console.WriteLine($"{menuOptionCount++}.{option.ItemText}");
             }
 
-           // Console.WriteLine("Please choose a bike type from the list");
-            
-            //string typeOfBike = Console.ReadLine();  
-            
-
-            
+                        
             Console.WriteLine("To exit the database please type 'Exit' and press enter");
         }
 
@@ -59,6 +54,8 @@ namespace Bike_Selector_Project
                     if (int.TryParse(userChoice, out int selection) && selection > 0 && selection <= options.Count)
                     {
                         return selection;
+                       
+                       
                     }
                     Console.WriteLine("Invalid Option");
                 }
