@@ -31,39 +31,39 @@ namespace Bike_Selector_Project
                 switch (bikeSelected)
                 {
                     case 1:
-                        var trek = bikes.Where(b => b.BikeBrand == "Trek").Select(b => b.BikeModel).ToList();
+                        var trek = bikes.Where(b => b.BikeBrand == "Trek");//.Select(b => b.BikeModel).ToList();
                         foreach (var b in trek)
-                            Console.WriteLine($"Trek has the model {b} model available.");
+                        Console.WriteLine($"Trek has the {b.BikeType} {b.BikeModel} available.");
                         break;
                     case 2:
-                        var giant = bikes.Where(b => b.BikeBrand == "Giant").Select(b => b.BikeModel).ToList();
+                        var giant = bikes.Where(b => b.BikeBrand == "Giant");//.Select(b => b.BikeModel).ToList();
                         foreach (var b in giant)
-                            Console.WriteLine($"Giant has the {b} model available.");
+                        Console.WriteLine($"Giant has the {b.BikeType} {b.BikeModel} available.");
                         break;
                     case 3:
-                        var ibis = bikes.Where(b => b.BikeBrand == "Ibis").Select(b => b.BikeModel).ToList();
+                        var ibis = bikes.Where(b => b.BikeBrand == "Ibis");//.Select(b => b.BikeModel).ToList();
                         foreach (var b in ibis)
-                            Console.WriteLine($"Ibis has the {b} model available.");
+                        Console.WriteLine($"Ibis has the {b.BikeType} {b.BikeModel} available.");
                         break;
                     case 4:
-                        var pivot = bikes.Where(b => b.BikeBrand == "Pivot").Select(b => b.BikeModel).ToList();
+                        var pivot = bikes.Where(b => b.BikeBrand == "Pivot");//.Select(b => b.BikeModel).ToList();
                         foreach (var b in pivot)
-                            Console.WriteLine($"Pivot has the {b} model available.");
+                        Console.WriteLine($"Pivot has the {b.BikeType} {b.BikeModel} available.");
                         break;
                     case 5:
-                        var transition = bikes.Where(b => b.BikeBrand == "Transition").Select(b => b.BikeModel).ToList();
+                        var transition = bikes.Where(b => b.BikeBrand == "Transition");//.Select(b => b.BikeModel).ToList();
                         foreach (var b in transition)
-                            Console.WriteLine($"Transition has the {b} model available.");
+                        Console.WriteLine($"Transition has the {b.BikeType} {b.BikeModel} available.");
                         break;
                     case 6:
-                        var specialized = bikes.Where(b => b.BikeBrand == "Specialized").Select(b => b.BikeModel).ToList();
+                        var specialized = bikes.Where(b => b.BikeBrand == "Specialized");//.Select(b => b.BikeModel).ToList();
                         foreach (var b in specialized)
-                            Console.WriteLine($"Specialized has the {b} model available.");
+                        Console.WriteLine($"Specialized has the {b.BikeType} {b.BikeModel} available.");
                         break;
                     case 7:
-                        var kona = bikes.Where(b => b.BikeBrand == "Kona").Select(b => b.BikeModel).ToList();
+                        var kona = bikes.Where(b => b.BikeBrand == "Kona");//.Select(b => b.BikeModel).ToList();
                         foreach (var b in kona)
-                            Console.WriteLine($"Kona has the {b} model available.");
+                        Console.WriteLine($"Kona has the {b.BikeType} {b.BikeModel} available.");
                         break;
 
                 }
