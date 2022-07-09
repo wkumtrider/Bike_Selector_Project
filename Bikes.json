@@ -1,0 +1,44 @@
+[
+  {
+    "BikeBrand": "Trek",
+    "BikeType": "All Mountain",
+    "BikeModel": "Fuel EX"
+  },
+  {
+    "BikeBrand": "Giant",
+    "BikeType": "XC",
+    "BikeModel": "Anthem"
+  },
+  {
+    "BikeBrand": "Ibis",
+    "BikeType": "Enduro",
+    "BikeModel": "Ripmo"
+  },
+  {
+    "BikeBrand": "Pivot",
+    "BikeType": "Downhill",
+    "BikeModel": "Phoenix"
+  },
+  {
+    "BikeBrand": "Transition",
+    "BikeType": "Trail",
+    "BikeModel": "Scout"
+  },
+  {
+    "BikeBrand": "Specialized",
+    "BikeType": "All Mountain",
+    "BikeModel": "Stumpjumper EVO"
+  },
+
+  {
+    "BikeBrand": "Kona",
+    "BikeType": "Hardtail",
+    "BikeModel": "Honzo"
+  },
+
+  {
+    "BikeBrand": "Ibis",
+    "BikeType": "Trail",
+    "BikeModel": "Ripley"
+  }
+]
