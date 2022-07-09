@@ -8,4 +8,4 @@ This is a menu based console application.
 # Features of This Project
 1. Implement a console application where the user can repeatedly enter commands/perform actions, including choosing to exit the program.  
 2. Read from a JSON file and use the data in the project.
-3. Use a LINQ query to pull specific data from the JSON file.
+3. Use a LINQ query to return specific data from the JSON file.
