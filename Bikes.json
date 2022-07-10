@@ -40,5 +40,10 @@
     "BikeBrand": "Ibis",
     "BikeType": "Trail",
     "BikeModel": "Ripley"
+  },
+  {
+    "BikeBrand": "Trek",
+    "BikeType": "Enduro",
+    "BikeModel": "Stash"
   }
 ]
