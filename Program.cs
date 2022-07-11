@@ -24,8 +24,6 @@ namespace Bike_Selector_Project
             menu.DisplayMainMenu(options);
             var bikeSelected = menu.GetMenuSelection(options);
 
-            //Console.WriteLine($"You selected menu option {bikeSelected}");
-            //return bikeSelected;
             do
             {
                 switch (bikeSelected)
