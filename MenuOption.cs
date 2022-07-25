@@ -13,5 +13,6 @@ namespace Bike_Selector_Project
             ItemText = itemText.Trim();
         }
         public string ItemText { get; set; }
+
     }
 }

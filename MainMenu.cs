@@ -22,6 +22,7 @@ namespace Bike_Selector_Project
            };
         }
 
+        
         public void DisplayMainMenu(List<MenuOption> options)
         {
             Console.Clear();
@@ -35,6 +36,8 @@ namespace Bike_Selector_Project
 
                         
             Console.WriteLine("To exit the database please type 'Exit' and press enter");
+
+            
         }
 
         public int GetMenuSelection(List<MenuOption> options)
@@ -54,13 +57,15 @@ namespace Bike_Selector_Project
                     if (int.TryParse(userChoice, out int selection) && selection > 0 && selection <= options.Count)
                     {
                         return selection;
-                       
-                       
+
                     }
                     Console.WriteLine("Invalid Option");
                 }
 
+
             } while (true);
+
+            
         }
     }
 }

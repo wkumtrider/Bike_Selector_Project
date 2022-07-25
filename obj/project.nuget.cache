@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "HxqnyhP5K4ZkuMq4fwPwm54mRnWS44+kgbpJOIehR8wVif1OLTayoodyFeBwHXAPlsGibbuhjZJ2rV5/eODzkQ==",
+  "dgSpecHash": "BQzfvgLv+oAUXCZ2RJsgvZ8RSpBgnvuHBq3KgRzArjNznW9bCKs+5inw3QNXoTPsPrJdDbX4Hck3AG5C0OlJQg==",
   "success": true,
   "projectFilePath": "C:\\Users\\jmcca\\Code_LVL_2022\\Bike_Selector_Project\\Bike_Selector_Project\\Bike_Selector_Project.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\jmcca\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
