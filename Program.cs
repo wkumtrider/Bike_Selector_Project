@@ -15,7 +15,9 @@ namespace Bike_Selector_Project
         
         public static int InitInventory()
         {
-            string JsonFile = "C:/Users/jmcca/Code_LVL_2022/Bike_Selector_Project/Bike_Selector_Project/Bikes.json";
+            //string JsonFile = "C:/Users/jmcca/Code_LVL_2022/Bike_Selector_Project/Bike_Selector_Project/Bikes.json";
+            string jsonFileName = "Bikes.json";
+            string JsonFile = Path.Combine(Environment.CurrentDirectory, jsonFileName);
 
             string jsonString = File.ReadAllText(JsonFile);
             List<Bike> bikes =JsonSerializer.Deserialize<List<Bike>>(jsonString);
