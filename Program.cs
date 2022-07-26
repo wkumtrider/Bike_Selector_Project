@@ -15,7 +15,7 @@ namespace Bike_Selector_Project
         
         public static int InitInventory()
         {
-            string JsonFile = @"./Bikes.json";
+            string JsonFile = "C:/Users/jmcca/Code_LVL_2022/Bike_Selector_Project/Bike_Selector_Project/Bikes.json";
 
             string jsonString = File.ReadAllText(JsonFile);
             List<Bike> bikes =JsonSerializer.Deserialize<List<Bike>>(jsonString);
@@ -67,7 +67,7 @@ namespace Bike_Selector_Project
 
                 }
 
-                Console.WriteLine("Do you want to add a bike to the list (Enter Yes or No)?");
+                Console.WriteLine("\n Do you want to add a bike to the list or exit (Enter Yes or Exit)?");
                 string AddBike = Console.ReadLine();
                 if (AddBike.ToLower() == "yes")
                 {
@@ -84,10 +84,11 @@ namespace Bike_Selector_Project
 
                     string bikeJsonList = JsonSerializer.Serialize<List<Bike>>(bikes);
                     File.WriteAllText(JsonFile, bikeJsonList);
+                    
                 }
                 else
                 {
-                    break;
+                    { Environment.Exit(0); }
                 };
 
                 
