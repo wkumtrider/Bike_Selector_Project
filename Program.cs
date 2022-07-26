@@ -86,7 +86,9 @@ namespace Bike_Selector_Project
 
                     string bikeJsonList = JsonSerializer.Serialize<List<Bike>>(bikes);
                     File.WriteAllText(JsonFile, bikeJsonList);
-                    
+
+                    menu.DisplayMainMenu(options);
+
                 }
                 else
                 {
