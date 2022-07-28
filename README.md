@@ -1,5 +1,5 @@
 # Bike Selector Project
-This project allows a user to enter a bike manufacturer and return a list of bikes offered by that manufacturer.  The user will select a specific manufacturer and a type of bike and the program will return the model(s) that meet the requirements.
+This project allows a user to enter a bike manufacturer and return a list of bikes offered by that manufacturer.  The user will select a specific biek manufacturer and the program will return the model(s) that meet the requirements.  The user can also add a new bike to the database.
 
 This is my project for Code Louisville Software Development course.
 
